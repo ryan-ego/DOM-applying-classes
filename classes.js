@@ -25,15 +25,18 @@ function one () {
 function two () {
   var two = document.getElementById('two')
   two.classList.add('green')
-}
-// CREATE FUNCTION three HERE
+ }
+// CREATE FUNCTION three HEREs
 function three () {
   var three = document.getElementById('three')
   three.classList.add('red')
 }
 // CREATE FUNCTION makeVisible HERE
 function makeVisible () {
-  document.getElementsByClassName('invisible')[0].classList.remove("invisible")
+  var invisibleElement = document.getElementsByClassName('invisible')[0]
+  console.log(document.getElementsByClassName('invisible')[0])
+  invisibleElement.classList.remove('invisible')
+  invisibleElement.classList.add ('visible')
    // for (let i=0;i<invisible.length;i++) {
   // invisible[i].classList.remove("invisible") 
   // }
